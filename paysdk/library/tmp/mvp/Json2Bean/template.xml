@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<template
+    format="3"
+    revision="1"
+    name="json2bean"
+    minApi="7"
+    minBuildApi="17"
+    description="Creates a bean a dao and a json2bean">
+
+    <category value="mvp" />
+
+	 <parameter
+        id="beanClass"
+        name="beanClass Name"
+        type="string"
+        constraints="class|unique|nonempty"
+        default="userBean"
+        help="The name of the bean class to create" />
+	
+   
+    <parameter
+        id="json"
+        name="json string"
+        type="string"
+        default="json string"
+        help="json string to create bean" />
+
+   
+    <!-- 128x128 thumbnails relative to template.xml -->
+    <thumbs>
+        <!-- default thumbnail is required -->
+        <thumb>templates_adapter.png</thumb>
+        
+    </thumbs>
+
+    <globals file="globals.xml.ftl" />
+    <execute file="recipe.xml.ftl" />
+
+</template>

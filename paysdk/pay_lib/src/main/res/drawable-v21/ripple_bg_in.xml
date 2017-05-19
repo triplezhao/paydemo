@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+        android:color="@color/potato_half_trans">
+    <item
+        android:drawable="@color/potato_white"></item>
+    // 如果不要这个行, 则ripple效果溢出
+</ripple>
+

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--other-->
+    <color name="progress_bar">#FF7E00</color>
+    <color name="window_background">#FFF5F5F5</color>
+
+    <color name="app_bg">#ECECEC</color>
+    <color name="sticker_blue">#1D6EC4</color>
+    <color name="white_gray">#EEEEEE</color>
+    <color name="white">#FFFFFFFF</color>
+    <!-- 支付成功 -->
+    <color name="oreder_success">#85B200</color>
+    <color name="black">#000000</color>
+    <!--添加修改左边-->
+    <color name="item_left_color">#999999</color>
+    <color name="ifsee_blue">#ff009fe0</color>
+    <color name="ifsee_blue1">#ccecf9</color>
+    <color name="ifsee_green">#5bc989</color>
+    <color name="ifsee_green_txt">#5bc989</color>
+    <color name="ifsee_logout">#e84c4c</color>
+    <color name="ifsee_orange">#f8724a</color>
+    <color name="ifsee_blue_txt">#00a0df</color>
+    <color name="ifsee_gray_txt_999">#999</color>
+    <color name="ifsee_gray_txt_9d9d9d">#9d9d9d</color>
+    <color name="ifsee_gray_txt_888">#888</color>
+    <color name="ifsee_gray_txt_666">#666</color>
+    <color name="ifsee_gray_txt_555">#555</color>
+    <color name="ifsee_gray_txt_333">#333</color>
+    <color name="ifsee_gray_txt_aaa">#aaa</color>
+    <color name="ifsee_gray_txt_bbb">#bbb</color>
+    <color name="ifsee_gray_txt_ccc">#ccc</color>
+    <color name="ifsee_gray_bt_ddd">#dddddd</color>
+    <color name="ifsee_gray_bbb">#bbb</color>
+    <color name="ifsee_gray_eee">#eeeeee</color>
+    <color name="ifsee_gray_f7f7f7">#f7f7f7</color>
+    <color name="ifsee_gray_f5">#f5f5f5</color>
+    <color name="ifsee_gray_e5">#e5e5e5</color>
+    <color name="ifsee_gray_edit_bg">#cccccc</color>
+    <color name="ifsee_gray_edit_hint">#dedede</color>
+    <color name="ifsee_red_price">#ff671d</color>
+    <color name="ifsee_white_d4e">#d4e9e4</color>
+    <color name="ifsee_divider">#eee</color>
+    <color name="ifsee_status_bg_blue">@color/ifsee_blue</color>
+    <color name="ifsee_status_bg_green">#17c295</color>
+    <color name="ifsee_status_bg_pink">#ff7cad</color>
+    <color name="ifsee_status_bg_yellow">#f7b55e</color>
+    <color name="ifsee_status_bg_gray">#666666</color>
+
+</resources>

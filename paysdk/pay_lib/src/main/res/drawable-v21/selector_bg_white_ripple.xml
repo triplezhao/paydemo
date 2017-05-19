@@ -1,0 +1,5 @@
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+        android:color="@color/potato_half_trans">
+    <item android:drawable="@color/potato_white"
+        />
+</ripple>

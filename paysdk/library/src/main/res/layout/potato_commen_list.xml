@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="test"
+            type="String" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/ll_swipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.potato.library.view.NormalEmptyView
+            android:id="@+id/empty_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        </com.potato.library.view.NormalEmptyView>
+
+        <com.potato.library.view.refresh.PotatoRecyclerSwipeLayout
+            android:id="@+id/swipe_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none" />
+
+        </com.potato.library.view.refresh.PotatoRecyclerSwipeLayout>
+
+
+    </LinearLayout>
+</layout>

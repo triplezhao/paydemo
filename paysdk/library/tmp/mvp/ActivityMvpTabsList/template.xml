@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<template
+    format="3"
+    revision="1"
+    name="mvp+Activity+tabs+listFragment"
+    minApi="7"
+    minBuildApi="17"
+    description="Creates a new Activity and mvp interface">
+
+    <category value="mvp" />
+
+	<!-- tabs activity -->
+	 <parameter
+        id="mvpClass"
+        name="mvpClass Name"
+        type="string"
+        constraints="class|unique|nonempty"
+        default="xxx"
+        help="The name of the mvp class to create" />
+	
+	<parameter
+        id="presenterClass"
+        name="presenter Name"
+        type="string"
+        constraints="class|unique|nonempty"
+		suggest="${mvpClass}Presenter"
+        default="presenterClass"
+        help="The name of the presenter class to create" />
+	
+    <parameter
+        id="activityClass"
+        name="Activity Name"
+        type="string"
+        constraints="class|unique|nonempty"
+        suggest="${mvpClass}Activity"
+        default="MvpActivity"
+        help="The name of the activity class to create" />
+
+    <parameter
+        id="layoutActivityName"
+        name="Layout Name"
+        type="string"
+        constraints="layout|unique|nonempty"
+        suggest="${activityToLayout(activityClass)}"
+        default="activity_layout"
+        help="The name of the layout to create for the activity" />
+
+		
+		
+		
+	<!-- tabs 里面的 fragment.默认为list样式-->
+	<parameter
+        id="fragmentMvpClass"
+        name="mvpClass Name"
+        type="string"
+		suggest="${mvpClass}List"
+        constraints="class|unique|nonempty"
+        default="xxx"
+        help="The name of the mvp class to create" />
+	
+	<parameter
+        id="fragmentPresenterClass"
+        name="presenter Name"
+        type="string"
+        constraints="class|unique|nonempty"
+		suggest="${fragmentMvpClass}Presenter"
+        default="presenterClass"
+        help="The name of the presenter class to create" />
+	
+    <parameter
+        id="fragmentClass"
+        name="Fragment Name"
+        type="string"
+        constraints="class|unique|nonempty"
+        suggest="${fragmentMvpClass}Fragment"
+        default="MvpFragment"
+        help="The name of the Fragment class to create" />
+
+    <parameter
+        id="layoutFragmentName"
+        name="Fragment Layout Name"
+        type="string"
+        constraints="layout|unique|nonempty"
+        suggest="fragment_${classToResource(fragmentMvpClass)}"
+        default="Fragment_layout"
+        help="The name of the layout to create for the Fragment" />
+    
+    <parameter
+        id="isLauncher"
+        name="Launcher Activity"
+        type="boolean"
+        default="false"
+        help="If true, this activity will have a CATEGORY_LAUNCHER intent filter, making it visible in the launcher" />
+
+    <parameter
+        id="packageName"
+        name="Package name"
+        type="string"
+        constraints="package"		
+        default="com.mycompany.myapp" />
+
+
+   
+    <!-- 128x128 thumbnails relative to template.xml -->
+    <thumbs>
+        <!-- default thumbnail is required -->
+        <thumb>templates_adapter.png</thumb>
+        
+    </thumbs>
+
+    <globals file="globals.xml.ftl" />
+    <execute file="recipe.xml.ftl" />
+
+</template>

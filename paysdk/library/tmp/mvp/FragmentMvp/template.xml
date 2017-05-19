@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<template
+    format="3"
+    revision="1"
+    name="mvp + Fragment"
+    minApi="7"
+    minBuildApi="17"
+    description="Creates a new Fragment and mvp interface">
+
+    <category value="mvp" />
+
+	 <parameter
+        id="mvpClass"
+        name="mvpClass Name"
+        type="string"
+        constraints="class|unique|nonempty"
+        default="xxx"
+        help="The name of the mvp class to create" />
+	
+	<parameter
+        id="presenterClass"
+        name="presenter Name"
+        type="string"
+        constraints="class|unique|nonempty"
+		suggest="${mvpClass}Presenter"
+        default="presenterClass"
+        help="The name of the presenter class to create" />
+	
+    <parameter
+        id="fragmentClass"
+        name="Fragment Name"
+        type="string"
+        constraints="class|unique|nonempty"
+        suggest="${mvpClass}Fragment"
+        default="MvpFragment"
+        help="The name of the Fragment class to create" />
+
+    <parameter
+        id="layoutFragmentName"
+        name="Layout Name"
+        type="string"
+        constraints="layout|unique|nonempty"
+        suggest="fragment_${classToResource(fragmentClass)}"
+        default="Fragment_layout"
+        help="The name of the layout to create for the Fragment" />
+
+    
+      <parameter
+        id="packageName"
+        name="Package name"
+        type="string"
+        constraints="package"		
+        default="com.mycompany.myapp" />
+
+  
+
+   
+    <!-- 128x128 thumbnails relative to template.xml -->
+    <thumbs>
+        <!-- default thumbnail is required -->
+        <thumb>templates_adapter.png</thumb>
+        
+    </thumbs>
+
+    <globals file="globals.xml.ftl" />
+    <execute file="recipe.xml.ftl" />
+
+</template>

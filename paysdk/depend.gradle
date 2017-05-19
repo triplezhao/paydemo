@@ -1,0 +1,30 @@
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+
+ext {
+    //Android
+    //Android
+    androidBuildToolsVersion = "24.0.1"
+    androidMinSdkVersion = 15
+    androidTargetSdkVersion = 24
+    androidCompileSdkVersion = 24
+
+    //Libraries
+
+    rxJavaVersion = '1.0.14'
+    rxAndroidVersion = '1.0.1'
+    gsonVersion = '2.5'
+    supportLibraryVersion = '24.1.0'
+    okHttpVersion = '3.2.0'
+    roundedimageviewVersion = '2.2.1'
+    eventsbus = '3.0.0'
+
+    //删除到jecenter时候，修改这个版本号
+    potatoLib = '1.7.3'
+//修改版本号，不然上传失败，另外注意修改okhttplib的版本号，保持同步，不然也会失败。
+// gradlew install
+// gradlew bintrayUpload
+}

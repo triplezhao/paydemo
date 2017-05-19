@@ -1,0 +1,5 @@
+include ':app', ':pay_lib'
+include ':potato_lib'
+project(':potato_lib').projectDir = new File('library')
+include ':okhttputils'
+project(':okhttputils').projectDir = new File('okhttputils')

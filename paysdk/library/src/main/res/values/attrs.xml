@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ratioimageview">
+        <!-- imageView的宽高目标比例，为了让图片能按照宽度，计算出自己的高度，否则会出现宽度压缩，高度保持了原图高度 -->
+        <attr name="targetx" format="integer"/>
+        <attr name="targety" format="integer"/>
+    </declare-styleable>
+</resources>
